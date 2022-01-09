@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"unicode"
 )
 
@@ -37,6 +38,7 @@ func main() {
 	for w := range wordCount {
 		words = append(words, w)
 	}
+	sort.Strings(words)
 	for _, w := range words {
 		fmt.Println(w, wordCount[w])
 	}
