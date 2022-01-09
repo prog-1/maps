@@ -28,7 +28,7 @@ func TestUniqueWords(t *testing.T) {
 		},
 		{
 			name: "single repeated",
-			args: "abc abc abc",
+			args: "+++abc123abc!@#abc+++",
 			want: map[string]int{"abc": 3},
 		},
 		{
