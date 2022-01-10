@@ -7,7 +7,7 @@ import (
 	"unicode"
 )
 
-// UnqiueRunes returns distinct runes and their count.
+// UniqueRunes returns distinct runes and their count.
 func UniqueRunes(s string) map[rune]int {
 	m := make(map[rune]int)
 	for _, r := range s {
