@@ -8,7 +8,7 @@ import (
 	"unicode"
 )
 
-// UnqiueWords returns distinct words and their count. Words consist of letters
+// UniqueWords returns distinct words and their count. Words consist of letters
 // only (unicode.IsLetter must return true).
 func UniqueWords(s string) map[string]int {
 	m := make(map[string]int)
